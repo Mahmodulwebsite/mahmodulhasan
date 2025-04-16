@@ -1,4 +1,273 @@
+নিচে আপনার আপডেটেড ওয়েবসাইটের ফাইলগুলো দেওয়া হলো। প্রতিটি ফাইল আলাদাভাবে ডাউনলোড করে ব্যবহার করতে পারবেন:
 
+---
+
+### 1. `robots.txt` ফাইল
+```txt
+User-agent: *
+Allow: /
+Sitemap: https://mahmodul.github.io/sitemap.xml
+```
+
+---
+
+### 2. `style.css` ফাইল
+```css
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f1f5f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+.card {
+  max-width: 700px;
+  background: white;
+  margin: 40px auto;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #007acc;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+}
+
+h1 {
+  margin: 10px 0 5px;
+  font-size: 2.2rem;
+  color: #222;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.3rem;
+  color: #007acc;
+  font-weight: 600;
+}
+
+.tagline {
+  font-style: italic;
+  color: #666;
+  margin: 10px 0 25px;
+  font-size: 1.1rem;
+}
+
+.description {
+  text-align: justify;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+.section {
+  text-align: left;
+  margin-top: 30px;
+}
+
+.section h3 {
+  color: #007acc;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 8px;
+  font-size: 1.2rem;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  line-height: 1.8;
+}
+
+ul li {
+  padding-left: 25px;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+ul li:before {
+  content: "•";
+  color: #007acc;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 0;
+  top: -3px;
+}
+
+.social {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.social a {
+  padding: 8px 15px;
+  background-color: #f0f7ff;
+  border-radius: 20px;
+  color: #007acc;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social a:hover {
+  background-color: #007acc;
+  color: white;
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+.contact {
+  margin-top: 25px;
+  font-weight: bold;
+  color: #007acc;
+  font-size: 1.05rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #f1f1f1;
+  }
+  .card {
+    background-color: #1e1e1e;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    margin: 20px;
+    padding: 25px;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+  }
+  
+  .profile-img {
+    width: 120px;
+    height: 120px;
+  }
+}
+```
+
+---
+
+### 3. `index.html` ফাইল
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Professional profile of Mahmodul Hasan, Safety Specialist with expertise in risk assessment and safety training.">
+  <title>Mahmodul Hasan - Safety Specialist | Risk Assessor | Safety Trainer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="card">
+    <img src="profile_picture_square.jpg" alt="Mahmodul Hasan - Safety Specialist" class="profile-img" />
+    <h1>Mahmodul Hasan</h1>
+    <h2>Safety Specialist</h2>
+    <p class="tagline">Empathetic & Analytical | Risk Assessor | Safety Trainer</p>
+    
+    <p class="description">
+      I am a dedicated safety specialist with a unique blend of emotional intelligence and rational analysis. 
+      My expertise lies in identifying and mitigating workplace hazards while fostering a proactive safety culture. 
+      With comprehensive training in occupational health and safety standards, I implement effective strategies 
+      to ensure compliance and protect both people and assets.
+    </p>
+
+    <div class="section">
+      <h3>Core Strengths</h3>
+      <ul>
+        <li>Comprehensive Risk Assessment & Incident Analysis</li>
+        <li>Engaging Safety Training & Awareness Programs</li>
+        <li>Regulatory Compliance with Health & Safety Standards</li>
+        <li>Effective Communication & Emotional Intelligence</li>
+        <li>Strategic Emergency Response Planning</li>
+        <li>Cross-functional Team Collaboration</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>Professional Certifications</h3>
+      <ul>
+        <li>OSHA 30-Hour General Industry Certification</li>
+        <li>IOSH Managing Safely</li>
+        <li>Advanced Industrial Occupational Health and Safety</li>
+        <li>Fire Safety Management Specialist</li>
+        <li>Certified Work Permit Receiver</li>
+        <li>Lifting and Rigging Safety Professional</li>
+        <li>Scaffolding Safety Competent Person</li>
+        <li>Workplace Health and Safety Compliance Officer</li>
+        <li>Certified First Aid Responder</li>
+      </ul>
+    </div>
+
+    <div class="social">
+      <h3>Connect With Me</h3>
+      <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+      <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+      <a href="#"><i class="fab fa-telegram"></i> Telegram</a>
+    </div>
+
+    <p class="contact">
+      <i class="fas fa-envelope"></i> Email: mmahmodul24@gmail.com<br>
+      <i class="fas fa-phone"></i> Phone: [Your Phone Number]
+    </p>
+  </div>
+</body>
+</html>
+```
+
+---
+
+### 4. `sitemap.xml` ফাইল
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://mahmodul.github.io/</loc>
+    <lastmod>2023-11-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.00</priority>
+  </url>
+</urlset>
+```
+
+---
+
+### ব্যবহার নির্দেশনা:
+1. উপরের প্রতিটি কোড কপি করে আলাদা ফাইল হিসেবে সেভ করুন (যেমন: `style.css`, `index.html` ইত্যাদি)।
+2. ফাইলগুলো একই ফোল্ডারে রাখুন।
+3. একটি হাই-কোয়ালিটি প্রোফাইল ছবি `profile_picture_square.jpg` নামে একই ফোল্ডারে যোগ করুন।
+4. আপনার ফোন নম্বর দিয়ে `[Your Phone Number]` অংশটি প্রতিস্থাপন করুন।
+
+এই ফাইলগুলো আপনার ওয়েবসাইটকে সম্পূর্ণ প্রফেশনাল এবং মডার্ন লুক দেবে!
 body {
     font-family: Arial, sans-serif;
     margin: 0;
