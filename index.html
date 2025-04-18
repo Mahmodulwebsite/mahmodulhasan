@@ -2,156 +2,202 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Md. Mahmodul Hasan</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <title>Md. Mahmodul Hasan - Portfolio</title>  <!-- SEO Meta Tags -->  <meta name="description" content="Official portfolio website of Md. Mahmodul Hasan, a Safety Specialist and BBA in Management student from Bangladesh.">
+  <meta name="keywords" content="Mahmodul Hasan, Safety Specialist, BBA in Management, Portfolio, Bangladesh, Resume, Safety Officer, Risk Assessment">
+  <meta name="author" content="Md. Mahmodul Hasan">  <!-- Open Graph for social sharing -->  <meta property="og:title" content="Md. Mahmodul Hasan - Portfolio Website">
+  <meta property="og:description" content="Safety Specialist | BBA in Management | Certified Professional">
+  <meta property="og:image" content="https://mahmodulwebsite.github.io/Mdmahmodulhasan/profile.jpg" />
+  <meta property="og:url" content="https://mahmodulwebsite.github.io/Mdmahmodulhasan/" />
+  <meta property="og:type" content="website">  <!-- Google Site Verification -->  <meta name="google-site-verification" content="Yke1uxuhXkyFOjzJz9RDCmvxaj513LHnwZnpS3gmvdE" />  <!-- Font & Styles -->  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" />
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f5faff;
-      color: #333;
+    html {
       scroll-behavior: smooth;
     }
-    .container {
-      padding: 20px;
-      max-width: 800px;
-      margin: 0 auto;
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      background: #f0f8ff;
+      color: #003366;
+      line-height: 1.6;
     }
-    .profile {
-      text-align: center;
-    }
-    .profile img {
-      width: 150px;
-      border-radius: 50%;
-    }
-    .social-links {
-      margin-top: 30px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 15px;
-    }
-    .social-links a {
-      font-size: 20px;
-      text-decoration: none;
-      color: #007bff;
-      transition: color 0.3s;
-    }
-    .social-links a:hover {
-      color: #0056b3;
-    }
-    .cv-button {
-      margin-top: 40px;
-      text-align: center;
-    }
-    .cv-button a {
-      background-color: #007bff;
+    header {
+      background: #003366;
       color: white;
-      padding: 10px 20px;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    nav {
+      margin-top: 1rem;
+    }
+    nav a {
+      display: inline-block;
+      margin: 0.5rem;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #66ccff;
+      text-decoration: underline;
+      transition: color 0.3s ease;
+    }
+    section {
+      padding: 2rem 1rem;
+      border-bottom: 1px solid #cce;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s forwards;
+    }
+    section:nth-of-type(2) { animation-delay: 0.2s; }
+    section:nth-of-type(3) { animation-delay: 0.4s; }
+    section:nth-of-type(4) { animation-delay: 0.6s; }
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    h2 {
+      color: #003366;
+    }
+    .profile-pic {
+      width: 120px;
+      max-width: 100%;
+      border-radius: 50%;
+      margin: 1rem auto;
+      display: block;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+    .profile-pic:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background: #003366;
+      color: white;
       text-decoration: none;
       border-radius: 5px;
+      font-size: 1rem;
     }
-    .footer {
-      margin-top: 60px;
-      border-top: 1px solid #ccc;
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-      color: #666;
+    .btn:hover, button:hover {
+      background-color: #0055aa;
+      transition: background-color 0.3s ease;
     }
-    .section {
-      margin-top: 60px;
-    }
-    .section h2 {
-      color: #007bff;
-      text-align: center;
-    }
-    .testimonials {
-      background-color: #e9f5ff;
-      padding: 20px;
-      border-radius: 10px;
-    }
-    .testimonial {
-      margin-bottom: 15px;
-      font-style: italic;
-    }
-    .contact-form {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-    .contact-form input,
-    .contact-form textarea {
-      padding: 10px;
+    input, textarea {
+      width: 100%;
+      padding: 0.6rem;
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
       border: 1px solid #ccc;
       border-radius: 5px;
-      font-size: 16px;
     }
-    .contact-form button {
-      background-color: #007bff;
+    button {
+      background-color: #003366;
       color: white;
-      padding: 10px;
       border: none;
+      padding: 0.6rem 1.2rem;
       border-radius: 5px;
-      font-size: 16px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    @media (min-width: 768px) {
+      section {
+        padding: 2rem 4rem;
+      }
+      .profile-pic {
+        width: 150px;
+      }
+      nav a {
+        margin: 0 1.5rem;
+        font-size: 1.1rem;
+      }
+    }
+    footer {
+      background: #003366;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    footer input, footer textarea {
+      border: 1px solid #88a;
+      background-color: #002244;
+      color: white;
+    }
+    footer input::placeholder,
+    footer textarea::placeholder {
+      color: #ccc;
+    }
+    #scrollTopBtn {
+      display: none;
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color: #003366;
+      color: white;
+      cursor: pointer;
+      padding: 10px 15px;
+      border-radius: 8px;
+    }
+    #scrollTopBtn:hover {
+      background-color: #0055aa;
+    }
+    .translate {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      z-index: 100;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="profile">
-      <img src="profile.jpg" alt="Md. Mahmodul Hasan" />
-      <h1>Md. Mahmodul Hasan</h1>
-      <p>Certified Safety Specialist | BBA in Management</p>
-    </div><div class="social-links">
-  <a href="https://www.linkedin.com/in/mahmodul-hasan-0283262b9" target="_blank">
-    <i class="fab fa-linkedin"></i> LinkedIn
-  </a>
-  <a href="https://www.instagram.com/mahmodul_93" target="_blank">
-    <i class="fab fa-instagram"></i> Instagram
-  </a>
-  <a href="https://x.com/mmahmodul24" target="_blank">
-    <i class="fab fa-x-twitter"></i> X (Twitter)
-  </a>
-  <a href="https://facebook.com" target="_blank">
-    <i class="fab fa-facebook"></i> Facebook
-  </a>
-</div>
+  <!-- Google Translate Button -->
+  <div class="translate" id="google_translate_element"></div>  <header>
+    <h1>Md. Mahmodul Hasan</h1>
+    <p>Certified Safety Specialist</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>  <img src="profile.jpg" alt="Mahmodul Hasan" class="profile-pic" />  <!-- Website Sections (About, Skills, Certifications, etc.) -->  <!-- Keep existing sections here -->  <footer>
+    <h3>Send Me a Message</h3>
+    <form action="mailto:mmahmodul24@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p style="margin-top:20px;">&copy; মাহমুদুল হাসান-২০২৫</p>
+  </footer><button onclick="topFunction()" id="scrollTopBtn" title="Go to top">↑</button>
 
-<div class="cv-button">
-  <a href="Md_Mahmodul_Hasan_CV.docx" download>Download CV</a>
-</div>
-
-<div class="section" id="about">
-  <h2>About Me</h2>
-  <p>I am a certified Safety Specialist with training in IOSH, OSHA, and Fire Safety Management. I have hands-on experience in real-world safety systems and am currently pursuing my BBA in Management at National University. I am fluent in Bengali and English and passionate about creating a safe work environment.</p>
-</div>
-
-<div class="section" id="testimonials">
-  <h2>Testimonials</h2>
-  <div class="testimonials">
-    <p class="testimonial">"Mahmodul is one of the most dedicated and professional safety specialists I’ve worked with."
-    <br>— Former Supervisor, Besi Private Ltd</p>
-    <p class="testimonial">"His knowledge in OSHA and real-life training sessions is excellent!"<br>— Safety Coordinator</p>
-  </div>
-</div>
-
-<div class="section" id="contact">
-  <h2>Contact Me</h2>
-  <form class="contact-form">
-    <input type="text" placeholder="Your Name" required />
-    <input type="email" placeholder="Your Email" required />
-    <textarea rows="4" placeholder="Your Message" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
-</div>
-
-<div class="footer">
-  <hr />
-  <p>© মাহমুদুল হাসান</p>
-</div>
-
-  </div>
-</body>
+  <!-- Scroll Button Script -->  <script>
+    const scrollBtn = document.getElementById("scrollTopBtn");
+    window.onscroll = function () {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        scrollBtn.style.display = "block";
+      } else {
+        scrollBtn.style.display = "none";
+      }
+    };
+    function topFunction() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>  <!-- Google Translate Script -->  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+  </script>  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script></body>
 </html>
