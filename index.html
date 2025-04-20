@@ -1,18 +1,32 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Md. Mahmodul Hasan - Portfolio</title>  <!-- SEO Meta Tags -->  <meta name="description" content="Official portfolio website of Md. Mahmodul Hasan, a Safety Specialist and BBA in Management student from Bangladesh.">
+  <title>Md. Mahmodul Hasan - Portfolio</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Official portfolio website of Md. Mahmodul Hasan, a Safety Specialist and BBA in Management student from Bangladesh.">
   <meta name="keywords" content="Mahmodul Hasan, Safety Specialist, BBA in Management, Portfolio, Bangladesh, Resume, Safety Officer, Risk Assessment">
-  <meta name="author" content="Md. Mahmodul Hasan">  <!-- Open Graph for social sharing -->  <meta property="og:title" content="Md. Mahmodul Hasan - Portfolio Website">
+  <meta name="author" content="Md. Mahmodul Hasan">
+
+  <!-- Open Graph for social sharing -->
+  <meta property="og:title" content="Md. Mahmodul Hasan - Portfolio Website">
   <meta property="og:description" content="Safety Specialist | BBA in Management | Certified Professional">
   <meta property="og:image" content="https://mahmodulwebsite.github.io/Mdmahmodulhasan/profile.jpg" />
   <meta property="og:url" content="https://mahmodulwebsite.github.io/Mdmahmodulhasan/" />
-  <meta property="og:type" content="website">  <!-- Google Site Verification -->  <meta name="google-site-verification" content="Yke1uxuhXkyFOjzJz9RDCmvxaj513LHnwZnpS3gmvdE" />  <!-- Font & Styles -->  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" />
+  <meta property="og:type" content="website">
+
+  <!-- Google Site Verification -->
+  <meta name="google-site-verification" content="Yke1uxuhXkyFOjzJz9RDCmvxaj513LHnwZnpS3gmvdE" />
+
+  <!-- Font & Styles -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" />
   <style>
     html {
       scroll-behavior: smooth;
     }
+
     body {
       font-family: 'Roboto', sans-serif;
       margin: 0;
@@ -20,15 +34,18 @@
       color: #003366;
       line-height: 1.6;
     }
+
     header {
       background: #003366;
       color: white;
       padding: 2rem 1rem;
       text-align: center;
     }
+
     nav {
       margin-top: 1rem;
     }
+
     nav a {
       display: inline-block;
       margin: 0.5rem;
@@ -36,11 +53,13 @@
       text-decoration: none;
       font-weight: bold;
     }
+
     nav a:hover {
       color: #66ccff;
       text-decoration: underline;
       transition: color 0.3s ease;
     }
+
     section {
       padding: 2rem 1rem;
       border-bottom: 1px solid #cce;
@@ -48,18 +67,22 @@
       transform: translateY(20px);
       animation: fadeInUp 1s forwards;
     }
+
     section:nth-of-type(2) { animation-delay: 0.2s; }
     section:nth-of-type(3) { animation-delay: 0.4s; }
     section:nth-of-type(4) { animation-delay: 0.6s; }
+
     @keyframes fadeInUp {
       to {
         opacity: 1;
         transform: translateY(0);
       }
     }
+
     h2 {
       color: #003366;
     }
+
     .profile-pic {
       width: 120px;
       max-width: 100%;
@@ -69,13 +92,16 @@
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
       transition: transform 0.3s ease;
     }
+
     .profile-pic:hover {
       transform: scale(1.05);
       box-shadow: 0 6px 15px rgba(0,0,0,0.3);
     }
+
     ul {
       padding-left: 1.5rem;
     }
+
     .btn {
       display: inline-block;
       margin-top: 1rem;
@@ -86,10 +112,12 @@
       border-radius: 5px;
       font-size: 1rem;
     }
+
     .btn:hover, button:hover {
       background-color: #0055aa;
       transition: background-color 0.3s ease;
     }
+
     input, textarea {
       width: 100%;
       padding: 0.6rem;
@@ -98,6 +126,7 @@
       border: 1px solid #ccc;
       border-radius: 5px;
     }
+
     button {
       background-color: #003366;
       color: white;
@@ -107,33 +136,40 @@
       cursor: pointer;
       font-size: 1rem;
     }
+
     @media (min-width: 768px) {
       section {
         padding: 2rem 4rem;
       }
+
       .profile-pic {
         width: 150px;
       }
+
       nav a {
         margin: 0 1.5rem;
         font-size: 1.1rem;
       }
     }
+
     footer {
       background: #003366;
       color: white;
       text-align: center;
       padding: 2rem 1rem;
     }
+
     footer input, footer textarea {
       border: 1px solid #88a;
       background-color: #002244;
       color: white;
     }
+
     footer input::placeholder,
     footer textarea::placeholder {
       color: #ccc;
     }
+
     #scrollTopBtn {
       display: none;
       position: fixed;
@@ -149,20 +185,14 @@
       padding: 10px 15px;
       border-radius: 8px;
     }
+
     #scrollTopBtn:hover {
       background-color: #0055aa;
-    }
-    .translate {
-      position: fixed;
-      top: 10px;
-      right: 10px;
-      z-index: 100;
     }
   </style>
 </head>
 <body>
-  <!-- Google Translate Button -->
-  <div class="translate" id="google_translate_element"></div>  <header>
+  <header>
     <h1>Md. Mahmodul Hasan</h1>
     <p>Certified Safety Specialist</p>
     <nav>
@@ -172,18 +202,175 @@
       <a href="#experience">Experience</a>
       <a href="#contact">Contact</a>
     </nav>
-  </header>  <img src="profile.jpg" alt="Mahmodul Hasan" class="profile-pic" />  <!-- Website Sections (About, Skills, Certifications, etc.) -->  <!-- Keep existing sections here -->  <footer>
-    <h3>Send Me a Message</h3>
-    <form action="mailto:mmahmodul24@gmail.com" method="post" enctype="text/plain">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
+  </header>
+
+  <img src="profile.jpg" alt="Mahmodul Hasan" class="profile-pic" />
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm <strong>Md. Mahmodul Hasan</strong>, a dedicated student of BBA in Management and an internationally certified Safety Specialist. I am passionate about creating safer workplaces through training, awareness, and effective safety management.</p>
+    <h3>Professional Skills</h3>
+    <ul>
+      <li>Certified in IOSH, OSHA 30 Hours, Fire Safety, First Aid, Work at Height, etc.</li>
+      <li>Computer proficiency: MS Office, IT Troubleshooting, Internet Tools</li>
+      <li>Languages: Fluent in Bengali and English</li>
+    </ul>
+    <h3>Achievements & Experience</h3>
+    <p>I have successfully completed <strong>10+</strong> international certifications through Besi Private Ltd. and gained <strong>2+ years</strong> of hands-on experience in health and safety practices.</p>
+    <h3>Goals</h3>
+    <p>My goal is to become a professional Safety Consultant and help industries implement smarter and safer systems that protect workers and improve productivity.</p>
+    <h3>Personal Information</h3>
+    <ul>
+      <li><strong>Phone:</strong> <a href="tel:+8801721125993">+8801721125993</a></li>
+      <li><strong>Email:</strong> <a href="mailto:mmahmodul24@gmail.com">mmahmodul24@gmail.com</a></li>
+      <li><strong>Location:</strong> Sreepur, Gazipur, Dhaka, Bangladesh</li>
+      <li><strong>Education:</strong> BBA in Management (National University)</li>
+    </ul>
+    <h3>Hobbies & Interests</h3>
+    <p>I enjoy learning about technology, participating in safety seminars, and being involved in social development initiatives.</p>
+    <p>Languages: Bengali (Native), English (Fluent)</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Risk Assessment</li>
+      <li>Hazard Identification</li>
+      <li>Incident Investigation</li>
+      <li>Safety Training</li>
+      <li>Report Writing</li>
+      <li>Microsoft Word, Excel, PowerPoint</li>
+      <li>Communication (Bengali & English)</li>
+    </ul>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li>IOSH</li>
+      <li>OSHA 30 Hours Course</li>
+      <li>Industrial Occupational Health and Safety</li>
+      <li>First Aid CPR</li>
+      <li>Fire Safety Management</li>
+      <li>Scaffolding</li>
+      <li>Lifting and Rigging</li>
+      <li>Confined Space/Work at Height</li>
+      <li>Workplace Health and Safety</li>
+      <li>Work Permit Receiver</li>
+    </ul>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <p><strong>Besi Private Ltd</strong></p>
+    <p>- Trained in safety management systems and real-world application.</p>
+    <p>- Completed trainings on compliance and emergency management.</p>
+  </section>
+
+<section id="why-safety-matters" style="background: linear-gradient(to right, #e0f7ff, #f5fbff); padding: 3rem 1rem; margin-top: 3rem;">
+  <div style="max-width: 1000px; margin: auto;">
+    <h2 style="text-align: center; color: #003366; font-size: 2.2rem; margin-bottom: 1rem;">Why Safety Matters</h2>
+    <p style="text-align: center; font-size: 1.2rem; color: #555; font-style: italic; max-width: 700px; margin: auto;">
+      "Safety doesn't happen by accident. It's a mindset, a culture, and a responsibility we all share."
+    </p>
+
+    <div style="display: flex; flex-wrap: wrap; gap: 2rem; margin-top: 2.5rem;">
+      <div style="flex: 1; min-width: 250px;">
+        <p style="font-size: 1.05rem; color: #333;">
+          Many people think, “Accidents can happen anytime,” but the real question is—<strong>if it can be prevented, shouldn’t we do something about it?</strong> 
+          Safety is not just a rulebook; it’s a culture that saves lives and ensures everyone goes home safe.
+        </p>
+      </div>
+
+      <div style="flex: 1; min-width: 250px;">
+        <ul style="font-size: 1.05rem; color: #003366; list-style: none; padding-left: 0;">
+          <li>✔ Serious injuries or even death</li>
+          <li>✔ Financial and legal consequences</li>
+          <li>✔ Damaged reputation of a company</li>
+          <li>✔ Loss in productivity & morale</li>
+        </ul>
+      </div>
+    </div>
+
+    <p style="text-align: center; font-size: 1.1rem; color: #222; margin-top: 2rem;">
+      <strong>Every small action toward safety builds a strong foundation for a better tomorrow.</strong><br>
+      Let’s commit today, for a safer workplace and a brighter future.
+    </p>
+    
+    <div style="text-align: center; margin-top: 1.5rem;">
+      <a href="#contact" class="btn" style="background-color: #0055aa; padding: 10px 25px; font-size: 1rem; border-radius: 5px;">Get in Touch to Promote Safety</a>
+    </div>
+  </div>
+</section>
+  <section id="contact">
+    <h2>Contact Me</h2>
+  </section>
+    <h2 style="text-align: center;">Social Media</h2>
+    <ul style="list-style-type: disc; padding-left: 2rem; font-size: 1.1rem;">
+      <li><a href="https://www.facebook.com/share/18yKr4XpiC/" target="_blank">Facebook</a></li>
+      <li><a href="https://x.com/mmahmodul24" target="_blank">Twitter (X)</a></li>
+      <li><a href="https://www.instagram.com/mahmodul_93" target="_blank">Instagram</a></li>
+      <li><a href="https://t.me/Mahmodul01" target="_blank">Telegram</a></li>
+      <li><a href="https://www.linkedin.com/in/mahmodul-hasan-0283262b9" target="_blank">LinkedIn</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <section id="contact" style="background: #f4f9ff; padding: 2.5rem 1rem;">
+  <div style="max-width: 600px; margin: auto;">
+    <h2 style="text-align: center; font-size: 1.9rem; color: #003366; margin-bottom: 0.3rem;">Send Me a Message</h2>
+    <p style="text-align: center; font-size: 1rem; color: #666; margin-bottom: 1.5rem;">
+      Feel free to reach out for collaborations, safety consultations, or just to say hello!
+    </p>
+
+    <form id="contactForm" style="background: #ffffff; padding: 1.5rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 85, 170, 0.1);">
+      <div style="display: flex; flex-direction: column; gap: 1rem;">
+        <input type="text" id="name" placeholder="Your Name" required style="padding: 10px 15px; border: 1px solid #ddd; border-radius: 6px;">
+        <input type="email" id="email" placeholder="Your Email" required style="padding: 10px 15px; border: 1px solid #ddd; border-radius: 6px;">
+        <textarea id="message" rows="4" placeholder="Your Message" required style="padding: 10px 15px; border: 1px solid #ddd; border-radius: 6px;"></textarea>
+      </div>
+      <div style="text-align: right; margin-top: 1.2rem;">
+        <button type="submit" style="background-color: #0055aa; color: white; padding: 10px 25px; border: none; border-radius: 5px; font-size: 1rem; cursor: pointer;">
+          Send
+        </button>
+      </div>
+    </form>
+
+    <div id="toast" style="display: none; margin-top: 1rem; text-align: center; font-weight: 600;"></div>
+  </div>
+</section>
+
+<script>
+  const form = document.getElementById('contactForm');
+  const toast = document.getElementById('toast');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    if (!name || !email || !message) {
+      toast.style.display = 'block';
+      toast.style.color = 'red';
+      toast.textContent = 'Please fill out all fields correctly.';
+      return;
+    }
+
+    toast.style.display = 'block';
+    toast.style.color = 'green';
+    toast.textContent = 'Message sent successfully!';
+    form.reset();
+</script>
+    
+</script>
     </form>
     <p style="margin-top:20px;">&copy; মাহমুদুল হাসান-২০২৫</p>
-  </footer><button onclick="topFunction()" id="scrollTopBtn" title="Go to top">↑</button>
+  </footer>
 
-  <!-- Scroll Button Script -->  <script>
+  <button onclick="topFunction()" id="scrollTopBtn" title="Go to top">↑</button>
+  <script>
     const scrollBtn = document.getElementById("scrollTopBtn");
     window.onscroll = function () {
       if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
@@ -192,12 +379,30 @@
         scrollBtn.style.display = "none";
       }
     };
+
     function topFunction() {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
-  </script>  <!-- Google Translate Script -->  <script type="text/javascript">
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-    }
-  </script>  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script></body>
-</html>
+  </script>
+  <!-- অন্য সব কনটেন্ট শেষ -->
+
+<a href="https://mahmodulwebsite.github.io/Mdmahmodulhasan/Md_Mahmodul_Hasan_CV.pdf" download class="cv-button">📄 Download My CV</a>
+
+<style>
+.cv-button {
+  display: inline-block;
+  background-color: #1e90ff;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.cv-button:hover {
+  background-color: #005cbf;
+}
+</style>
+
+</body>
+  </html>
