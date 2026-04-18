@@ -1,390 +1,899 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Md. Mahmodul Hasan - Portfolio</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="msvalidate.01" content="2226E282F9379E418B979D5BA0FBD6D1" />
+<meta name="msvalidate.01" content="B1F14FC741026BAE266A49D99E170ABF" />
+<meta name="google-site-verification" content="Yke1uxuhXkyFOjzJz9RDCmvxaj513LHnwZnpS3gmvdE" />
+<meta name="description" content="Md. Mahmodul Hasan - Certified Safety Specialist with IOSH, OSHA, Fire Safety, and Industrial Occupational Health and Safety certifications.">
+<meta name="keywords" content="Mahmodul Hasan, মাহমুদুল হাসান, Safety Specialist, IOSH, OSHA, Bangladesh">
+<meta name="author" content="Md. Mahmodul Hasan">
+<meta property="og:title" content="Md. Mahmodul Hasan - Certified Safety Specialist" />
+<meta property="og:description" content="Experienced IOSH, OSHA & Fire Safety specialist from Bangladesh." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://mahmodulwebsite.github.io/Mdmahmodulhasan/" />
+<meta name="twitter:card" content="summary_large_image" />
+<title>Mahmodul Hasan | মাহমুদুল হাসান | Safety Specialist</title>
+<link rel="alternate" hreflang="bn" href="https://mahmodulwebsite.github.io/Mdmahmodulhasan/" />
+<link rel="alternate" hreflang="en" href="https://mahmodulwebsite.github.io/Mdmahmodulhasan/" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@400;500;600&family=Bebas+Neue&display=swap" rel="stylesheet">
 
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="Official portfolio website of Md. Mahmodul Hasan, a Safety Specialist and BBA in Management student from Bangladesh.">
-  <meta name="keywords" content="Mahmodul Hasan, Safety Specialist, BBA in Management, Portfolio, Bangladesh, Resume, Safety Officer, Risk Assessment">
-  <meta name="author" content="Md. Mahmodul Hasan">
+<style>
+:root {
+  --navy: #0b1e3d;
+  --navy-mid: #122a52;
+  --navy-light: #1a3a6e;
+  --gold: #c9993a;
+  --gold-light: #e8b84b;
+  --gold-pale: #f5e6c0;
+  --cream: #faf8f3;
+  --text: #1a1a2e;
+  --muted: #6b7280;
+  --white: #ffffff;
+  --danger: #c0392b;
+  --success: #1a7a4a;
+}
 
-  <!-- Open Graph for social sharing -->
-  <meta property="og:title" content="Md. Mahmodul Hasan - Portfolio Website">
-  <meta property="og:description" content="Safety Specialist | BBA in Management | Certified Professional">
-  <meta property="og:image" content="https://mahmodulwebsite.github.io/Mdmahmodulhasan/profile.jpg" />
-  <meta property="og:url" content="https://mahmodulwebsite.github.io/Mdmahmodulhasan/" />
-  <meta property="og:type" content="website">
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  <!-- Google Site Verification -->
-  <meta name="google-site-verification" content="Yke1uxuhXkyFOjzJz9RDCmvxaj513LHnwZnpS3gmvdE" />
+html { scroll-behavior: smooth; }
 
-  <!-- Font & Styles -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" />
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--cream);
+  color: var(--text);
+  overflow-x: hidden;
+}
 
-    body {
-      font-family: 'Roboto', sans-serif;
-      margin: 0;
-      background: #f0f8ff;
-      color: #003366;
-      line-height: 1.6;
-    }
+/* ── SCROLLBAR ── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--navy); }
+::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 3px; }
 
-    header {
-      background: #003366;
-      color: white;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
+/* ── HERO ── */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  background: var(--navy);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 80px 20px 60px;
+}
 
-    nav {
-      margin-top: 1rem;
-    }
+/* Geometric background lines */
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(201,153,58,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(201,153,58,0.06) 1px, transparent 1px);
+  background-size: 60px 60px;
+  pointer-events: none;
+}
 
-    nav a {
-      display: inline-block;
-      margin: 0.5rem;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
+/* Radial glow */
+.hero::after {
+  content: '';
+  position: absolute;
+  top: -100px; left: 50%;
+  transform: translateX(-50%);
+  width: 700px; height: 700px;
+  background: radial-gradient(circle, rgba(201,153,58,0.12) 0%, transparent 70%);
+  pointer-events: none;
+}
 
-    nav a:hover {
-      color: #66ccff;
-      text-decoration: underline;
-      transition: color 0.3s ease;
-    }
+.hero-inner {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
 
-    section {
-      padding: 2rem 1rem;
-      border-bottom: 1px solid #cce;
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeInUp 1s forwards;
-    }
+.hero-badge {
+  display: inline-block;
+  background: rgba(201,153,58,0.15);
+  border: 1px solid rgba(201,153,58,0.4);
+  color: var(--gold-light);
+  font-size: 11px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  padding: 6px 18px;
+  border-radius: 30px;
+  margin-bottom: 24px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  animation: fadeDown 0.8s ease forwards;
+}
 
-    section:nth-of-type(2) { animation-delay: 0.2s; }
-    section:nth-of-type(3) { animation-delay: 0.4s; }
-    section:nth-of-type(4) { animation-delay: 0.6s; }
+.hero-photo-ring {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 28px;
+  animation: fadeDown 0.9s ease 0.1s both;
+}
 
-    @keyframes fadeInUp {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
+.hero-photo-ring::before {
+  content: '';
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  background: linear-gradient(135deg, var(--gold), transparent, var(--gold)) border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  animation: spin 8s linear infinite;
+}
 
-    h2 {
-      color: #003366;
-    }
+@keyframes spin { to { transform: rotate(360deg); } }
 
-    .profile-pic {
-      width: 120px;
-      max-width: 100%;
-      border-radius: 50%;
-      margin: 1rem auto;
-      display: block;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      transition: transform 0.3s ease;
-    }
+.hero-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  border: 3px solid rgba(201,153,58,0.3);
+  background: var(--navy-light);
+}
 
-    .profile-pic:hover {
-      transform: scale(1.05);
-      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
-    }
+.hero-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2.8rem, 7vw, 5rem);
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.05;
+  margin-bottom: 10px;
+  animation: fadeDown 1s ease 0.2s both;
+}
 
-    ul {
-      padding-left: 1.5rem;
-    }
+.hero-name span { color: var(--gold-light); }
 
-    .btn {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 0.5rem 1rem;
-      background: #003366;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      font-size: 1rem;
-    }
+.hero-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
+  letter-spacing: 6px;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 32px;
+  animation: fadeDown 1s ease 0.3s both;
+}
 
-    .btn:hover, button:hover {
-      background-color: #0055aa;
-      transition: background-color 0.3s ease;
-    }
+.hero-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 40px;
+  animation: fadeDown 1s ease 0.4s both;
+}
 
-    input, textarea {
-      width: 100%;
-      padding: 0.6rem;
-      margin-top: 0.5rem;
-      margin-bottom: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
+.pill {
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: rgba(255,255,255,0.75);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
 
-    button {
-      background-color: #003366;
-      color: white;
-      border: none;
-      padding: 0.6rem 1.2rem;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 1rem;
-    }
+.pill:hover {
+  background: rgba(201,153,58,0.2);
+  border-color: var(--gold);
+  color: var(--gold-light);
+}
 
-    @media (min-width: 768px) {
-      section {
-        padding: 2rem 4rem;
-      }
+.hero-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  animation: fadeDown 1s ease 0.5s both;
+}
 
-      .profile-pic {
-        width: 150px;
-      }
+.hero-nav a {
+  color: rgba(255,255,255,0.6);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  position: relative;
+}
 
-      nav a {
-        margin: 0 1.5rem;
-        font-size: 1.1rem;
-      }
-    }
+.hero-nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 4px; left: 50%; right: 50%;
+  height: 1px;
+  background: var(--gold);
+  transition: all 0.3s ease;
+}
 
-    footer {
-      background: #003366;
-      color: white;
-      text-align: center;
-      padding: 2rem 1rem;
-    }
+.hero-nav a:hover {
+  color: var(--gold-light);
+}
 
-    footer input, footer textarea {
-      border: 1px solid #88a;
-      background-color: #002244;
-      color: white;
-    }
+.hero-nav a:hover::after {
+  left: 16px; right: 16px;
+}
 
-    footer input::placeholder,
-    footer textarea::placeholder {
-      color: #ccc;
-    }
+/* Scroll indicator */
+.scroll-hint {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  color: rgba(255,255,255,0.3);
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  animation: bounce 2s ease infinite;
+  z-index: 2;
+}
 
-    #scrollTopBtn {
-      display: none;
-      position: fixed;
-      bottom: 30px;
-      right: 30px;
-      z-index: 99;
-      font-size: 18px;
-      border: none;
-      outline: none;
-      background-color: #003366;
-      color: white;
-      cursor: pointer;
-      padding: 10px 15px;
-      border-radius: 8px;
-    }
+.scroll-hint::before {
+  content: '';
+  width: 1px;
+  height: 40px;
+  background: linear-gradient(to bottom, rgba(201,153,58,0.6), transparent);
+}
 
-    #scrollTopBtn:hover {
-      background-color: #0055aa;
-    }
-  </style>
+@keyframes bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(8px); }
+}
+
+/* ── SECTION BASE ── */
+.section {
+  padding: 90px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.section-tag {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 12px;
+  letter-spacing: 5px;
+  color: var(--gold);
+  margin-bottom: 10px;
+  display: block;
+}
+
+.section-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 50px;
+  line-height: 1.1;
+}
+
+.section-title em {
+  color: var(--gold);
+  font-style: normal;
+}
+
+/* ── DIVIDER ── */
+.wave-divider {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave-divider svg {
+  display: block;
+  width: 100%;
+}
+
+/* ── ABOUT ── */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: start;
+}
+
+.about-text p {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.info-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.info-list li {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  font-size: 14px;
+  color: #444;
+}
+
+.info-list .label {
+  font-weight: 600;
+  color: var(--navy);
+  min-width: 80px;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.info-list a {
+  color: var(--gold);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.info-list a:hover { color: var(--navy); }
+
+.stat-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.stat-card {
+  background: var(--navy);
+  border-radius: 16px;
+  padding: 28px 24px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--gold), var(--gold-light));
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(11,30,61,0.2);
+}
+
+.stat-num {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3rem;
+  color: var(--gold-light);
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: rgba(255,255,255,0.55);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/* ── SKILLS ── */
+.skills-bg {
+  background: var(--navy);
+  padding: 90px 20px;
+}
+
+.skills-bg .section-title { color: var(--white); }
+.skills-bg .section-tag { color: var(--gold-light); }
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.skill-item {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 12px;
+  padding: 20px 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.skill-item:hover {
+  background: rgba(201,153,58,0.12);
+  border-color: rgba(201,153,58,0.4);
+  transform: translateX(4px);
+}
+
+.skill-icon {
+  width: 36px;
+  height: 36px;
+  background: rgba(201,153,58,0.15);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.skill-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.85);
+}
+
+/* ── CERTIFICATIONS ── */
+.certs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.cert-card {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 28px 24px;
+  border: 1px solid rgba(11,30,61,0.08);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+}
+
+.cert-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--gold), var(--gold-light));
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  transform-origin: left;
+}
+
+.cert-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(11,30,61,0.12);
+}
+
+.cert-card:hover::after { transform: scaleX(1); }
+
+.cert-number {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.5rem;
+  color: rgba(11,30,61,0.06);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.cert-name {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--navy);
+  line-height: 1.4;
+}
+
+.cert-badge {
+  display: inline-block;
+  margin-top: 10px;
+  background: rgba(201,153,58,0.1);
+  border: 1px solid rgba(201,153,58,0.3);
+  color: var(--gold);
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+/* ── SAFETY MATTERS ── */
+.safety-section {
+  background: linear-gradient(135deg, var(--navy) 0%, #0d2855 100%);
+  padding: 90px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.safety-section::before {
+  content: '"';
+  position: absolute;
+  top: -20px; left: 5%;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 25rem;
+  color: rgba(201,153,58,0.04);
+  line-height: 1;
+  pointer-events: none;
+}
+
+.safety-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.safety-section .section-title { color: var(--white); }
+.safety-section .section-tag { color: var(--gold-light); }
+
+.quote-block {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.3rem, 3vw, 1.8rem);
+  font-style: italic;
+  color: var(--gold-light);
+  border-left: 3px solid var(--gold);
+  padding-left: 24px;
+  margin-bottom: 50px;
+  line-height: 1.6;
+}
+
+.safety-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.safety-text {
+  font-size: 16px;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.8;
+}
+
+.safety-text strong { color: var(--white); }
+
+.safety-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.safety-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: rgba(255,255,255,0.75);
+  font-size: 15px;
+}
+
+.safety-list li::before {
+  content: '✦';
+  color: var(--gold);
+  font-size: 12px;
+  flex-shrink: 0;
+}
+
+.safety-cta {
+  margin-top: 40px;
+  text-align: center;
+}
+
+/* ── EXPERIENCE ── */
+.exp-card {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 36px;
+  border: 1px solid rgba(11,30,61,0.08);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  display: flex;
+  gap: 28px;
+  align-items: flex-start;
+  transition: all 0.3s ease;
+}
+
+.exp-card:hover {
+  box-shadow: 0 16px 40px rgba(11,30,61,0.1);
+  transform: translateY(-3px);
+}
+
+.exp-logo {
+  width: 60px;
+  height: 60px;
+  background: var(--navy);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 18px;
+  color: var(--gold);
+  letter-spacing: 1px;
+  flex-shrink: 0;
+}
+
+.exp-details h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 6px;
+}
+
+.exp-details .exp-sub {
+  font-size: 13px;
+  color: var(--gold);
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.exp-details p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.7;
+}
+
+/* ── SOCIAL ── */
+.social-section { padding: 70px 20px; max-width: 1100px; margin: 0 auto; }
+
+.social-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 14px;
+}
+
+.social-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.social-card.fb  { background: #e8f0fe; color: #1877f2; border-color: #c3d3fa; }
+.social-card.tw  { background: #e8f5fe; color: #1da1f2; border-color: #bee3fd; }
+.social-card.ig  { background: #fce8f3; color: #e1306c; border-color: #f7bad9; }
+.social-card.tg  { background: #e8f5fd; color: #0088cc; border-color: #b3d9ef; }
+.social-card.li  { background: #e8f2fa; color: #0077b5; border-color: #b3d3e8; }
+
+.social-card:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(0,0,0,0.1); }
+
+.social-icon { font-size: 20px; }
+
+/* ── CONTACT ── */
+.contact-section { background: var(--navy); padding: 90px 20px; }
+
+.contact-inner { max-width: 680px; margin: 0 auto; }
+
+.contact-section .section-title { color: var(--white); }
+.contact-section .section-tag { color: var(--gold-light); }
+
+.contact-form {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.form-group { margin-bottom: 20px; }
+
+.form-group label {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 10px;
+  padding: 14px 18px;
+  color: var(--white);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder { color: rgba(255,255,255,0.3); }
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--gold);
+  background: rgba(201,153,58,0.06);
+  box-shadow: 0 0 0 3px rgba(201,153,58,0.1);
+}
+
+.form-group textarea { resize: vertical; min-height: 130px; }
+
+/* ── BUTTONS ── */
+.btn-gold {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--gold), var(--gold-light));
+  color: var(--navy);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 14px 32px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(201,153,58,0.3);
+}
+
+.btn-gold:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(201,153,58,0.4);
+}
+
+.btn-outline {
+  display: inline-block;
+  background: transparent;
+  color: var(--gold-light);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 12px 26px;
+  border-radius: 8px;
+  border: 1px solid rgba(201,153,58,0.5);
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background: rgba(201,153,58,0.1);
+  border-color: var(--gold-light);
+}
+
+/* ── FOOTER ── */
+footer {
+  background: #060f1e;
+  text-align: center;
+  padding: 30px 20px;
+  color: rgba(255,255,255,0.3);
+  font-size: 13px;
+}
+
+footer span { color: var(--gold); }
+
+/* ── SCROLL TOP ── */
+#scrollTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 999;
+  width: 44px;
+  height: 44px;
+  background: var(--gold);
+  color: var(--navy);
+  border: none;
+  border-radius: 50%;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(201,153,58,0.4);
+  transition: all 0.3s ease;
+}
+
+#scrollTopBtn:hover {
+  background: var(--gold-light);
+  transform: translateY(-3px);
+}
+
+/* ── TOAST ── */
+#toast {
+  display: none;
+  position: fixed;
+  bottom: 80px;
+  right: 28px;
+  background: var(--success);
+  color: var(--white);
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  z-index: 9999;
+  animation: fadeDown 0.4s ease;
+}
+
+/* ── SCROLL REVEAL ── */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── ANIMATIONS ── */
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .about-grid, .safety-grid { grid-template-columns: 1fr; }
+  .stat-cards { grid-template-columns: 1fr 1fr; }
+  .exp-card { flex-direction: column; }
+  .contact-form { padding: 28px 20px; }
+}
+</style>
 </head>
 <body>
-  <header>
-    <h1>Md. Mahmodul Hasan</h1>
-    <p>Certified Safety Specialist</p>
-    <nav>
+
+<!-- ══════════ HERO ══════════ -->
+<section class="hero" id="top">
+  <div class="hero-inner">
+    <div class="hero-badge">⚠ Certified Safety Specialist</div>
+
+    <div class="hero-photo-ring">
+      <img src="profile.jpg" alt="Mahmodul Hasan" class="hero-photo"
+           onerror="this.style.background='#1a3a6e';this.style.display='block'">
+    </div>
+
+    <h1 class="hero-name">Md. <span>Mahmodul</span><br>Hasan</h1>
+    <p class="hero-title">Safety Specialist · BBA in Management</p>
+
+    <div class="hero-pills">
+      <span class="pill">🛡 IOSH</span>
+      <span class="pill">🔒 OSHA 30H</span>
+      <span class="pill">🔥 Fire Safety</span>
+      <span class="pill">🚑 First Aid CPR</span>
+      <span class="pill">🏗 Work at Height</span>
+      <span class="pill">🇧🇩 Bangladesh</span>
+    </div>
+
+    <nav class="hero-nav">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#certifications">Certifications</a>
       <a href="#experience">Experience</a>
       <a href="#contact">Contact</a>
     </nav>
-  </header>
-
-  <img src="profile.jpg" alt="Mahmodul Hasan" class="profile-pic" />
-
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Hello! I'm <strong>Md. Mahmodul Hasan</strong>, a dedicated student of BBA in Management and an internationally certified Safety Specialist. I am passionate about creating safer workplaces through training, awareness, and effective safety management.</p>
-    <h3>Professional Skills</h3>
-    <ul>
-      <li>Certified in IOSH, OSHA 30 Hours, Fire Safety, First Aid, Work at Height, etc.</li>
-      <li>Computer proficiency: MS Office, IT Troubleshooting, Internet Tools</li>
-      <li>Languages: Fluent in Bengali and English</li>
-    </ul>
-    <h3>Achievements & Experience</h3>
-    <p>I have successfully completed <strong>10+</strong> international certifications through Besi Private Ltd. and gained <strong>2+ years</strong> of hands-on experience in health and safety practices.</p>
-    <h3>Goals</h3>
-    <p>My goal is to become a professional Safety Consultant and help industries implement smarter and safer systems that protect workers and improve productivity.</p>
-    <h3>Personal Information</h3>
-    <ul>
-      <li><strong>Phone:</strong> <a href="tel:+8801721125993">+8801721125993</a></li>
-      <li><strong>Email:</strong> <a href="mailto:mmahmodul24@gmail.com">mmahmodul24@gmail.com</a></li>
-      <li><strong>Location:</strong> Sreepur, Gazipur, Dhaka, Bangladesh</li>
-      <li><strong>Education:</strong> BBA in Management (National University)</li>
-    </ul>
-    <h3>Hobbies & Interests</h3>
-    <p>I enjoy learning about technology, participating in safety seminars, and being involved in social development initiatives.</p>
-    <p>Languages: Bengali (Native), English (Fluent)</p>
-  </section>
-
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Risk Assessment</li>
-      <li>Hazard Identification</li>
-      <li>Incident Investigation</li>
-      <li>Safety Training</li>
-      <li>Report Writing</li>
-      <li>Microsoft Word, Excel, PowerPoint</li>
-      <li>Communication (Bengali & English)</li>
-    </ul>
-  </section>
-
-  <section id="certifications">
-    <h2>Certifications</h2>
-    <ul>
-      <li>IOSH</li>
-      <li>OSHA 30 Hours Course</li>
-      <li>Industrial Occupational Health and Safety</li>
-      <li>First Aid CPR</li>
-      <li>Fire Safety Management</li>
-      <li>Scaffolding</li>
-      <li>Lifting and Rigging</li>
-      <li>Confined Space/Work at Height</li>
-      <li>Workplace Health and Safety</li>
-      <li>Work Permit Receiver</li>
-    </ul>
-  </section>
-
-  <section id="experience">
-    <h2>Experience</h2>
-    <p><strong>Besi Private Ltd</strong></p>
-    <p>- Trained in safety management systems and real-world application.</p>
-    <p>- Completed trainings on compliance and emergency management.</p>
-  </section>
-
-<section id="why-safety-matters" style="background: linear-gradient(to right, #e0f7ff, #f5fbff); padding: 3rem 1rem; margin-top: 3rem;">
-  <div style="max-width: 1000px; margin: auto;">
-    <h2 style="text-align: center; color: #003366; font-size: 2.2rem; margin-bottom: 1rem;">Why Safety Matters</h2>
-    <p style="text-align: center; font-size: 1.2rem; color: #555; font-style: italic; max-width: 700px; margin: auto;">
-      "Safety doesn't happen by accident. It's a mindset, a culture, and a responsibility we all share."
-    </p>
-
-    <div style="display: flex; flex-wrap: wrap; gap: 2rem; margin-top: 2.5rem;">
-      <div style="flex: 1; min-width: 250px;">
-        <p style="font-size: 1.05rem; color: #333;">
-          Many people think, “Accidents can happen anytime,” but the real question is—<strong>if it can be prevented, shouldn’t we do something about it?</strong> 
-          Safety is not just a rulebook; it’s a culture that saves lives and ensures everyone goes home safe.
-        </p>
-      </div>
-
-      <div style="flex: 1; min-width: 250px;">
-        <ul style="font-size: 1.05rem; color: #003366; list-style: none; padding-left: 0;">
-          <li>✔ Serious injuries or even death</li>
-          <li>✔ Financial and legal consequences</li>
-          <li>✔ Damaged reputation of a company</li>
-          <li>✔ Loss in productivity & morale</li>
-        </ul>
-      </div>
-    </div>
-
-    <p style="text-align: center; font-size: 1.1rem; color: #222; margin-top: 2rem;">
-      <strong>Every small action toward safety builds a strong foundation for a better tomorrow.</strong><br>
-      Let’s commit today, for a safer workplace and a brighter future.
-    </p>
-    
-    <div style="text-align: center; margin-top: 1.5rem;">
-      <a href="#contact" class="btn" style="background-color: #0055aa; padding: 10px 25px; font-size: 1rem; border-radius: 5px;">Get in Touch to Promote Safety</a>
-    </div>
   </div>
-</section>
-  <section id="contact">
-    <h2>Contact Me</h2>
-  </section>
-    <h2 style="text-align: center;">Social Media</h2>
-    <ul style="list-style-type: disc; padding-left: 2rem; font-size: 1.1rem;">
-      <li><a href="https://www.facebook.com/share/18yKr4XpiC/" target="_blank">Facebook</a></li>
-      <li><a href="https://x.com/mmahmodul24" target="_blank">Twitter (X)</a></li>
-      <li><a href="https://www.instagram.com/mahmodul_93" target="_blank">Instagram</a></li>
-      <li><a href="https://t.me/Mahmodul01" target="_blank">Telegram</a></li>
-      <li><a href="https://www.linkedin.com/in/mahmodul-hasan-0283262b9" target="_blank">LinkedIn</a></li>
-    </ul>
-  </section>
-
-  <footer>
-    <section id="contact" style="background: #f4f9ff; padding: 2.5rem 1rem;">
-  <div style="max-width: 600px; margin: auto;">
-    <h2 style="text-align: center; font-size: 1.9rem; color: #003366; margin-bottom: 0.3rem;">Send Me a Message</h2>
-    <p style="text-align: center; font-size: 1rem; color: #666; margin-bottom: 1.5rem;">
-      Feel free to reach out for collaborations, safety consultations, or just to say hello!
-    </p>
-
-    <form id="contactForm" style="background: #ffffff; padding: 1.5rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 85, 170, 0.1);">
-      <div style="display: flex; flex-direction: column; gap: 1rem;">
-        <input type="text" id="name" placeholder="Your Name" required style="padding: 10px 15px; border: 1px solid #ddd; border-radius: 6px;">
-        <input type="email" id="email" placeholder="Your Email" required style="padding: 10px 15px; border: 1px solid #ddd; border-radius: 6px;">
-        <textarea id="message" rows="4" placeholder="Your Message" required style="padding: 10px 15px; border: 1px solid #ddd; border-radius: 6px;"></textarea>
-      </div>
-      <div style="text-align: right; margin-top: 1.2rem;">
-        <button type="submit" style="background-color: #0055aa; color: white; padding: 10px 25px; border: none; border-radius: 5px; font-size: 1rem; cursor: pointer;">
-          Send
-        </button>
-      </div>
-    </form>
-
-    <div id="toast" style="display: none; margin-top: 1rem; text-align: center; font-weight: 600;"></div>
-  </div>
+  <div class="scroll-hint">Scroll</div>
 </section>
 
-<script>
-  const form = document.getElementById('contactForm');
-  const toast = document.getElementById('toast');
-
-  form.addEventListener('submit', function(e) {
-    e.preventDefault();
-
-    const name = document.getElementById('name').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const message = document.getElementById('message').value.trim();
-
-    if (!name || !email || !message) {
-      toast.style.display = 'block';
-      toast.style.color = 'red';
-      toast.textContent = 'Please fill out all fields correctly.';
-      return;
-    }
-
-    toast.style.display = 'block';
-    toast.style.color = 'green';
-    toast.textContent = 'Message sent successfully!';
-    form.reset();
-</script>
-    
-</script>
-    </form>
-    <p style="margin-top:20px;">&copy; মাহমুদুল হাসান-২০২৫</p>
-  </footer>
-
-  <button onclick="topFunction()" id="scrollTopBtn" title="Go to top">↑</button>
-  <script>
-    const scrollBtn = document.getElementById("scrollTopBtn");
-    window.onscroll = function () {
-      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-        scrollBtn.style.display = "block";
-      } else {
-        scrollBtn.style.display = "none";
-      }
-    };
-
-    function topFunction() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-  </script>
-  <!-- অন্য সব কনটেন্ট শেষ -->
-
-</body>
-  </html>
+<!-- wave -->
+<div class="wave-divider" style="background:var(--navy);">
+  <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <path d="M0,30 C360,60 1080,0 1440,30 L1440,
